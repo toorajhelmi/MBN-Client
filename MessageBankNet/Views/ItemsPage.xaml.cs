@@ -16,12 +16,9 @@ namespace MessageBankNet.Views
     {
         ItemsViewModel viewModel;
 
-        public static INavigation NavigationService;
-
         public ItemsPage()
         {
             InitializeComponent();
-            NavigationService = Navigation;
             BindingContext = viewModel = new ItemsViewModel();
         }
 
@@ -31,7 +28,7 @@ namespace MessageBankNet.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new ItemDetailPage()));
+            await Navigation.PushAsync(new NavigationPage(new ItemDetailPage()));
         }
     }
 }

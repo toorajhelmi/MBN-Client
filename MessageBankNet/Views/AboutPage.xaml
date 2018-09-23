@@ -44,9 +44,9 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="This app is written by Tooraj Helmi to demo Smart Contracts" />
+                                <Span Text="This app is written by tooraj.Helmi@neudesic.com to demo" />
                                 <Span Text=" " />
-                                <Span Text="Neudesic" FontAttributes="Bold" />
+                                <Span Text="Smart Contract" FontAttributes="Bold" />
                                 <Span Text="." />
                             </FormattedString.Spans>
                         </FormattedString>

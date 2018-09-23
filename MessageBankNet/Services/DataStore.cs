@@ -42,7 +42,16 @@ namespace MessageBankNet.Services
 
         public async Task SendToken(Transaction transaction)
         {
-            await client.PostAsync("sendToken", new StringContent(JsonConvert.SerializeObject(transaction), Encoding.UTF8, "application/json"));
+            try
+            {
+                await client.PostAsync("sendToken",
+                                       new StringContent(JsonConvert.SerializeObject(transaction),
+                                                         Encoding.UTF8, "application/json"));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }

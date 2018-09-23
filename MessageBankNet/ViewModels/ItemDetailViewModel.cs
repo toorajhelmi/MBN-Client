@@ -30,7 +30,8 @@ namespace MessageBankNet.ViewModels
                 });
             }
 
-            await ItemsPage.NavigationService.PopAsync();
+            await MainPage.Instance.DisplayAlert("Success", $"{TokenCount} tokens successfully sent to {To}.", "OK");
+            await MainPage.Instance.Navigation.PopAsync();
         }
     }
 }
