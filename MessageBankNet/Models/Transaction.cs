@@ -7,7 +7,7 @@ namespace MessageBankNet.Models
     {
         [JsonProperty("address")]
         public string Address { get; set; }
-        [JsonProperty("mMessage")]
+        [JsonProperty("message")]
         public string Message { get; set; }
         [JsonProperty("tokens")]
         public int Tokens { get; set; }

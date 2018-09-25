@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using MessageBankNet.Models;
-using MessageBankNet.Views;
 using Newtonsoft.Json;
 
 namespace MessageBankNet.Services
@@ -15,6 +13,7 @@ namespace MessageBankNet.Services
 
         public DataStore()
         {
+            //client.BaseAddress = new Uri("http://localhost:8080/token/");
             client.BaseAddress = new Uri("http://ec2-18-216-154-92.us-east-2.compute.amazonaws.com:8080/token/");
         }
 
